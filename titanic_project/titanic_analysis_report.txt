@@ -1,0 +1,81 @@
+TITANIC SURVIVAL STATISTICAL ANALYSIS REPORT
+=====================================================
+
+Generated using Python Pandas + NumPy + Functional Programming
+1. INTRODUCTION
+This report presents an in-depth statistical analysis of the Titanic dataset to understand survival patterns and influencing factors such as gender, age, passenger class, and socio-economic status.
+
+2. DATA OVERVIEW
+• Total Passengers: 891
+• Total Columns: 17
+• Average Fare (Manual Recursion): 32.45
+• Median Age by Class:
+   - Class 1: 37.00 years
+   - Class 2: 29.00 years
+   - Class 3: 24.00 years
+
+3. MISSING VALUES HANDLING
+Missing Age values were filled using class-wise median. Zero or invalid fares were replaced with median fare values.
+
+4. FEATURE ENGINEERING
+• FamilySize = SibSp + Parch + 1
+• FarePerPerson = Fare / FamilySize
+• IsChild = Age < 12
+• Average Family Size: 1.90
+• Average Fare Per Person: 20.16
+
+5. WOMEN AND CHILDREN ANALYSIS
+• Women & Children Survival Rate: 72.29%
+• Others Survival Rate: 16.45%
+
+6. PASSENGER CLASS ANALYSIS
+   - Class 1: 62.96%
+   - Class 2: 47.28%
+   - Class 3: 24.24%
+
+7. RANDOM SAMPLING COMPARISON
+Random sampling used to compare survivors and non-survivors.
+• Avg Age (Survivors): 27.61
+• Avg Age (Non-Survivors): 33.93
+• Avg Fare (Survivors): 49.90
+• Avg Fare (Non-Survivors): 20.45
+• Avg Family Size (Survivors): 2.26
+• Avg Family Size (Non-Survivors): 1.60
+
+8. STATISTICAL SUMMARY
+Manual Statistics:
+• Total Fare (Recursion): 28911.45
+• Mean Fare: 32.45
+• Max Age: 80.0
+• Min Age: 0.42
+
+FamilySize Statistics:
+• Max Family Size: 11
+• Min Family Size: 1
+• Mean Family Size: 1.90
+
+Pandas Statistics:
+• Mean Age: 29.07
+• Median Age: 26.00
+• Mode Age: 24.0
+• Max Fare: 512.33
+• Min Fare: 4.01
+
+9. FUNCTIONAL PROGRAMMING
+• Median Fare: 14.50
+• Fares Above Median: 434
+• Total High Fares (Reduce): 27119.38
+
+11. DATA VISUALIZATION
+Graphs generated include:
+• Survival Count
+• Survival Rate by Gender
+• Survival Rate by Passenger Class
+• Age Distribution
+• Fare Distribution
+
+10. CONCLUSION
+Survival was strongly influenced by gender, age, and passenger class. Women and children had higher survival rates, and higher fare passengers had better chances due to socio-economic advantages.
+
+• Overall survival rate was relatively low, showing the severity of the disaster.
+REPORT GENERATED SUCCESSFULLY.
