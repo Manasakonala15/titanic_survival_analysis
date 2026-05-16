@@ -30,6 +30,7 @@ Random Module
 Functional Programming Concepts
 File Handling
 Python Concepts Implemented
+
 1. Exception Handling
 
 Used try-except blocks for:
@@ -37,6 +38,7 @@ Used try-except blocks for:
 File reading
 File writing
 Division by zero handling
+
 2. Loops and Conditional Statements
 
 Implemented:
@@ -51,10 +53,12 @@ Used for:
 Filtering passengers
 Counting missing values
 Group analysis
+
 3. Missing Value Handling
 Missing Age values filled using manually computed class-wise median
 Invalid Fare values replaced using median fare
-4. Feature Engineering
+
+5. Feature Engineering
 
 Created new columns:
 
@@ -62,6 +66,7 @@ FamilySize
 FarePerPerson
 IsChild
 WC_Flag
+
 5. Statistical Analysis
 
 Computed:
@@ -77,6 +82,7 @@ Using:
 Manual calculations
 Pandas methods
 Recursive summation
+
 6. Functional Programming
 
 Used:
@@ -144,6 +150,7 @@ Step 3
 Run the Python file:
 
 python titanic_analysis.py
+
 Step 4
 
 Check the generated report:
