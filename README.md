@@ -1,177 +1,204 @@
-Titanic Survival Statistical Analysis
-Project Overview
+🚢 Titanic Survival Statistical Analysis
+📌 Project Overview
 
-This project performs a complete statistical analysis of the Titanic Survival dataset using Python. The analysis is carried out using concepts such as loops, recursion, functional programming, conditional statements, exception handling, feature engineering, and statistical computations.
+This project performs a complete statistical analysis of the famous Titanic Survival dataset using Python. The project applies concepts such as:
 
-The project aims to analyze the factors affecting passenger survival during the Titanic disaster.
+🔁 Loops
+🧠 Recursion
+⚡ Functional Programming
+📊 Statistical Analysis
+🛠️ Feature Engineering
+❗ Exception Handling
+📂 File Handling
 
-Dataset Information
-Dataset Name: Titanic Dataset
-Rows: 891
-Columns: 12
-Source: Kaggle Titanic Dataset
+The main objective of this project is to analyze the factors that influenced passenger survival during the Titanic disaster.
+
+📂 Dataset Information
+📄 Dataset Name: Titanic Dataset
+👥 Total Rows: 891
+📑 Total Columns: 12
+🌐 Source: Kaggle Titanic Dataset
 
 The dataset contains passenger details such as:
 
-Passenger Class
-Name
-Sex
-Age
-Fare
-Number of Siblings/Spouses
-Number of Parents/Children
-Embarked Port
-Survival Status
-Technologies Used
-Python
-Pandas
-NumPy
-Random Module
-Functional Programming Concepts
-File Handling
-Python Concepts Implemented
-
-1. Exception Handling
+🧍 Passenger Name
+🎟️ Passenger Class
+👨 Gender
+🎂 Age
+💰 Fare
+👨‍👩‍👧 Family Information
+🚢 Embarked Port
+❤️ Survival Status
+🛠️ Technologies Used
+Technology	Purpose
+🐍 Python	Core Programming
+🐼 Pandas	Data Analysis
+🔢 NumPy	Numerical Operations
+🎲 Random Module	Random Sampling
+🧠 Functional Programming	Advanced Operations
+📄 File Handling	Report Generation
+✨ Python Concepts Implemented
+1️⃣ Exception Handling
 
 Used try-except blocks for:
 
-File reading
-File writing
-Division by zero handling
-
-2. Loops and Conditional Statements
+📂 File Reading
+📝 File Writing
+⚠️ Division by Zero Handling
+2️⃣ Loops & Conditional Statements
 
 Implemented:
 
-for loops
-if-elif-else
-Logical operators
-Relational operators
+🔁 for loops
+✅ if-elif-else
+🔗 Logical operators
+⚖️ Relational operators
 
 Used for:
 
 Filtering passengers
 Counting missing values
-Group analysis
+Survival analysis
+3️⃣ Missing Value Handling
 
-3. Missing Value Handling
-Missing Age values filled using manually computed class-wise median
-Invalid Fare values replaced using median fare
+✔️ Missing Age values filled using manually calculated class-wise median.
 
-5. Feature Engineering
+✔️ Invalid or zero fares replaced using median fare.
+
+4️⃣ Feature Engineering
 
 Created new columns:
 
-FamilySize
-FarePerPerson
-IsChild
-WC_Flag
+Feature	Description
+👨‍👩‍👧 FamilySize	Total family members
+💵 FarePerPerson	Fare divided by family size
+👶 IsChild	Identifies children
+🚩 WC_Flag	Women & Children flag
+5️⃣ Statistical Analysis
 
-5. Statistical Analysis
+Calculated:
 
-Computed:
-
-Mean
-Median
-Mode
-Minimum
-Maximum
+📈 Mean
+📉 Median
+🔁 Mode
+⬆️ Maximum
+⬇️ Minimum
 
 Using:
 
-Manual calculations
-Pandas methods
-Recursive summation
+🧠 Manual calculations
+🐼 Pandas methods
+🔄 Recursive functions
+6️⃣ Functional Programming
 
-6. Functional Programming
+Implemented:
 
-Used:
+🧹 filter()
+🗺️ map()
+➕ reduce()
 
-filter()
-map()
-reduce()
+Used for fare analysis and transformations.
 
-For fare analysis and transformation.
+7️⃣ Random Sampling
 
-7. Random Sampling
+🎲 Randomly selected:
 
-Randomly selected:
-
-50 Survivors
-50 Non-Survivors
+✅ 50 Survivors
+❌ 50 Non-Survivors
 
 Compared:
 
-Age
-Fare
-Family Size
-Project Workflow
-Load Titanic dataset
-Explore dataset structure
-Handle missing values
-Create new features
-Analyze women and children survival
-Perform random sampling
-Calculate statistics
-Apply functional programming
-Generate final report
-Output Generated
+🎂 Age
+💰 Fare
+👨‍👩‍👧 Family Size
+🔄 Project Workflow
+📥 Load Dataset
+      ↓
+🔍 Explore Data
+      ↓
+🧹 Handle Missing Values
+      ↓
+⚙️ Feature Engineering
+      ↓
+👩‍👧 Women & Children Analysis
+      ↓
+🎲 Random Sampling
+      ↓
+📊 Statistical Analysis
+      ↓
+🧠 Functional Programming
+      ↓
+📝 Generate Final Report
+📄 Output Generated
 
-The program generates:
+The program automatically generates:
 
-titanic_analysis_report.txt
+📝 titanic_analysis_report.txt
 
 This report contains:
 
-Dataset overview
-Missing value analysis
-Feature engineering details
-Survival analysis
-Statistical summary
-Functional programming results
-Final conclusions
-Key Findings
-Women and children had significantly higher survival rates.
-First-class passengers had better survival probability.
-Higher fare passengers showed higher survival chances.
-Passenger class strongly influenced survival outcomes.
-How to Run the Project
-Step 1
+📌 Dataset Overview
+🧹 Missing Value Analysis
+⚙️ Feature Engineering
+📊 Survival Analysis
+📈 Statistical Summary
+🧠 Functional Programming Results
+✅ Final Conclusion
+🔍 Key Findings
 
-Install required libraries:
+✅ Women and children had higher survival rates.
 
+✅ First-class passengers had better survival chances.
+
+✅ Higher fare passengers showed better survival probability.
+
+✅ Passenger class strongly influenced survival outcomes.
+
+▶️ How to Run the Project
+📌 Step 1 — Install Libraries
 pip install pandas numpy
-Step 2
+📌 Step 2 — Add Dataset
 
-Place titanic.csv in the project folder.
+Place titanic.csv inside the project folder.
 
-Step 3
-
-Run the Python file:
-
+📌 Step 3 — Run the Program
 python titanic_analysis.py
-
-Step 4
-
-Check the generated report:
-
+📌 Step 4 — View Generated Report
 titanic_analysis_report.txt
-Author
+📸 Sample Features Generated
+Passenger	FamilySize	FarePerPerson	IsChild
+John	3	25.50	False
+Anna	5	10.20	True
+🎯 Learning Outcomes
 
-Manasa Konala
-B.Tech Computer Science Engineering
-SRM University AP
+Through this project, I learned:
 
-Conclusion
+📊 Statistical Analysis
+🧹 Data Cleaning
+⚙️ Feature Engineering
+🧠 Functional Programming
+🔄 Recursion
+📂 File Handling
+🐍 Advanced Python Programming
+👩‍💻 Author
+🌸 Manasa Konala
 
-This project demonstrates practical implementation of:
+🎓 B.Tech – Computer Science Engineering
+🏫 SRM University AP
 
-Data Analysis
-Statistical Computation
-Python Programming
-Functional Programming
-File Handling
-Data Cleaning
-Feature Engineering
+✅ Conclusion
 
-using the Titanic Survival dataset.
+This project successfully demonstrates the practical implementation of:
+
+📊 Data Analysis
+🐍 Python Programming
+📈 Statistical Computation
+🧠 Functional Programming
+⚙️ Feature Engineering
+📂 File Handling
+
+using the Titanic Survival dataset to analyze real-world survival patterns during the Titanic disaster.
+
+⭐ Thank You
+
+🚢 “Data tells the story of survival.”
